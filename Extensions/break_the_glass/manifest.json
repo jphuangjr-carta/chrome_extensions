@@ -1,0 +1,17 @@
+{
+  "name": "Break the glass",
+  "description": "Breaking the glass for personal deployments",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Click to show an alert",
+    "default_icon": {
+      "16": "images/glass16.png",
+      "24": "images/glass24.png"
+    }
+  },
+  "permissions": ["storage", "activeTab", "scripting"]
+}
