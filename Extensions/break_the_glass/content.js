@@ -27,5 +27,5 @@ if (reason != null || reason != "") {
       mode: "cors",
       credentials: "include",
     }
-  );
+  ).then(() => location.reload());
 }
