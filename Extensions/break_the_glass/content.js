@@ -8,7 +8,10 @@ if (reason) {
     ) || 25;
   if (reason != null || reason != "") {
     fetch(
-      `${window.location.origin}/llc/v1/accounts/${account}/break-the-glass`,
+      `${window.location.origin.replace(
+        "app",
+        "llc-core"
+      )}/llc/v1/accounts/${account}/break-the-glass`,
       {
         headers: {
           accept: "*/*",
@@ -25,7 +28,7 @@ if (reason) {
         referrer:
           "https://llc-core.demo.carta.team/swagger-ui.html?urls.primaryName=default",
         referrerPolicy: "strict-origin-when-cross-origin",
-        body: `{\n  \"level\": \"ADMIN\",\n  \"reason\": \"${reason}\",\n  \"ttl\": 57000,\n  \"userId\": ${user}\n}`,
+        body: `{\n  \"level\": \"ADMIN\",\n  \"reason\": \"${reason}\",\n  \"ttl\": 57600,\n  \"userId\": ${user}\n}`,
         method: "POST",
         mode: "cors",
         credentials: "include",
