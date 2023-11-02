@@ -1,0 +1,16 @@
+{
+  "name": "Launch Jenkins",
+  "description": "Quick launch of Jenkins",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Quick Launch Jenkins",
+    "default_icon": {
+      "16": "images/icon16.png"
+    }
+  },
+  "permissions": ["storage", "activeTab", "scripting", "tabs"]
+}
