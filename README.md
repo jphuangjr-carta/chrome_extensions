@@ -1,4 +1,4 @@
-# Chrome Extensions by JPH
+# Chrome Extensions by Josh H.
 
 ### Getting Started
 
@@ -27,3 +27,7 @@ Navigate to the extension you want to load. For this example we will be loading 
 ### break_the_glass
 
 Clicking on the icon when on a personal deployment will prompt you to enter your reason and specify the userId of the logged in user (Fred Admin default). This will grant you 15hr Admin access.
+
+### launch_jenkins
+
+Quickly launch a personal test box with all of the services needed to to run llc-ui pre-selected
