@@ -4,7 +4,7 @@ var defaultSettings = {
   boxName: null,
   cluster: "eks-test",
   fundAdmin: true,
-  cartaWeb: true,
+  cartaWeb: "master",
   llcCore: true,
   llcCoreDb: true,
   cds: true,
