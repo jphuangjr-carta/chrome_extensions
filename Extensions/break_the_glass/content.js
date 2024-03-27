@@ -1,11 +1,13 @@
+import * as defaultConfig from "./config.js";
+
 var account = window.location.pathname.split("/")[3];
-var reason = prompt("Break the glass reason: ");
+var reason = defaultConfig.autoBreak
+  ? defaultConfig.defaultReason
+  : window.prompt("Reason for breaking the glass");
+var user = defaultConfig.autoBreak
+  ? defaultConfig.defaultUser
+  : window.prompt("User ID");
 if (reason) {
-  let user =
-    prompt(
-      "User ID Override. Otherwise (click cancel) using 25 (Fred Admin)",
-      25
-    ) || 25;
   if (reason != null || reason != "") {
     fetch(
       `${window.location.origin.replace(
