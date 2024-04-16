@@ -1,10 +1,14 @@
-import * as defaultConfig from "./config.js";
+var defaultConfig = {
+  autobreak: false,
+  defaultReason: "Dev",
+  defaultUser: 25,
+};
 
 var account = window.location.pathname.split("/")[3];
-var reason = defaultConfig.autoBreak
+var reason = defaultConfig.autobreak
   ? defaultConfig.defaultReason
   : window.prompt("Reason for breaking the glass");
-var user = defaultConfig.autoBreak
+var user = defaultConfig.autobreak
   ? defaultConfig.defaultUser
   : window.prompt("User ID");
 if (reason) {
