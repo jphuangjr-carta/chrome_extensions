@@ -10,7 +10,7 @@ var reason = defaultConfig.autobreak
   : window.prompt("Reason for breaking the glass");
 var user = defaultConfig.autobreak
   ? defaultConfig.defaultUser
-  : window.prompt("User ID");
+  : window.prompt("User ID (defaults to 25)") || 25;
 if (reason) {
   if (reason != null || reason != "") {
     fetch(
